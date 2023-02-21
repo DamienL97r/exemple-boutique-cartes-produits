@@ -1,0 +1,193 @@
+/*Style général*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+/*  Titre:   font-family: Raleway;      */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/*  Texte:   font-family: Open Sans;    */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Open Sans;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+/*Design page Boutique + Card Produit avec effet de hover*/
+
+.header-boutique {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50%;
+  transform: translateX(-50%);
+
+  width: 60%;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.info-produit {
+  width: 100%;
+  height: 3rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nb-produit {
+  color: rgb(20, 20, 20);
+  font-size: 1.4rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tri-produit {
+  width: 250px;
+  height: 100%;
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  background-color: #cccccc;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tri-produit > img {
+  width: 2rem;
+  padding-left: 5px;
+  padding-right: 10px;
+  border-right: 2px solid rgba(0, 0, 0, 0.596);
+}
+
+.tri-produit > input {
+  
+  padding: 0.6rem;
+  
+  width: 180px;
+  background-color: #cccccc;
+  color: rgb(20, 20, 20);
+  font-size: 1.1rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+
+.container-msgAR{
+  padding: 2rem;
+  margin-bottom: 1.3rem;
+  width: 50%;
+  height: max-content;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px black;
+  display: none;
+}
+
+.container-msgAR > h2 {
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+
+.container-msgAR > p {
+  text-align: justify;
+}
+
+
+
+.container-produits {
+  background-color: #cccccc;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.card-produit {
+  width: 250px;
+  height: 400px;
+  text-align: left;
+  margin-left: 3%;
+  margin-bottom: 2rem;
+  z-index: 10;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 10px black;
+  overflow: hidden;
+}
+
+.produit > img {
+  width: 100%;
+  height: 250px;
+}
+
+.overlay {
+  height: auto;
+  padding: 5%;
+  width: 80%;
+  border-radius: 10px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 0.2rem;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.2s ease-in;
+  color: #1A202C;
+}
+
+.overlay > p{
+  margin-bottom: 0.2rem;
+}
+
+.overlay > .nom-produit {
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.overlay > .prix {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.ajout-panier{
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 0.1rem;
+}
+
+.ajout-panier > p > a{
+  text-decoration: none;
+  color: #272727;
+  margin-right: 0.5rem;
+  font-weight: bolder;
+  font-size: 0.94rem;
+  text-transform: uppercase;
+}
+
+.ajout-panier > img {
+  width: 20px;
+}
+
+
+.card-produit:hover .overlay {
+  margin-top: -30px;
+}
